@@ -24,7 +24,9 @@ const Index = () => {
         <Experience />
         <Projects />
         <Research />
-        <MediaEvents />
+        <section id="media">
+          <MediaEvents />
+        </section>
         <Contact />
       </main>
     </div>
