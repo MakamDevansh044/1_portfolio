@@ -130,7 +130,7 @@
   }
 
   .light .glass-effect {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
@@ -163,14 +163,6 @@
   .hover-glow:hover {
     box-shadow: 0 0 30px rgba(0, 128, 255, 0.6);
     transform: translateY(-2px);
-  }
-
-  /* Responsive text sizes */
-  @media (max-width: 640px) {
-    .gradient-text {
-      background-size: 200% 200%;
-      animation: gradient-flow 3s ease infinite;
-    }
   }
 
   /* Enhanced Animations */
