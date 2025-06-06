@@ -7,6 +7,7 @@ import Leadership from '@/components/Leadership';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Research from '@/components/Research';
+import MediaEvents from '@/components/MediaEvents';
 import Contact from '@/components/Contact';
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
         <Experience />
         <Projects />
         <Research />
+        <MediaEvents />
         <Contact />
       </main>
     </div>
