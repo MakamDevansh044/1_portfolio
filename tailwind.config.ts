@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				electric: '#0080FF',
+				cyber: '#8B5CF6',
+				neon: '#00FF88',
+				flame: '#FF6B35',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,25 +65,49 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				float: {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' },
+				},
+				glow: {
+					'0%, 100%': { boxShadow: '0 0 20px rgba(0, 128, 255, 0.5)' },
+					'50%': { boxShadow: '0 0 40px rgba(0, 128, 255, 0.8)' },
+				},
+				typing: {
+					'0%': { width: '0' },
+					'100%': { width: '100%' },
+				},
+				blink: {
+					'50%': { borderColor: 'transparent' },
+				},
+				particle: {
+					'0%': { transform: 'translateY(0) rotate(0deg)', opacity: '1' },
+					'100%': { transform: 'translateY(-100vh) rotate(360deg)', opacity: '0' },
+				},
+				glitch: {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'20%': { transform: 'translateX(-2px)' },
+					'40%': { transform: 'translateX(2px)' },
+					'60%': { transform: 'translateX(-2px)' },
+					'80%': { transform: 'translateX(2px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				float: 'float 6s ease-in-out infinite',
+				glow: 'glow 2s ease-in-out infinite alternate',
+				typing: 'typing 3.5s steps(40, end)',
+				blink: 'blink 1s infinite',
+				particle: 'particle 10s linear infinite',
+				glitch: 'glitch 0.3s ease-in-out infinite',
 			}
 		}
 	},
